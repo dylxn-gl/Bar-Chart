@@ -76,7 +76,6 @@ fetch(url)
         const tooltip = d3.select("#tooltip");
 
         tooltip
-          .duration(200)
           .style("opacity", 0.9)
           .style("left", e.pageX + 10 + "px")
           .style("top", e.pageY + 10 + "px")
@@ -88,7 +87,7 @@ fetch(url)
       .on("mouseout", () => {
         const tooltip = d3.select("#tooltip");
 
-        tooltip.duration(200).style("opacity", 0);
+        tooltip.style("opacity", 0);
       });
 
     const tooltip = d3
