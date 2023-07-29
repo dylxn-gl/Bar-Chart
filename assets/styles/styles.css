@@ -64,3 +64,6 @@ main {
   opacity: 50%;
 }
 
+#tooltip {
+  border-radius: 15px;
+}
